@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MATERIALIZE -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <title>Menu desplegable</title>
+</head>
+<body>
+    <header class="container">
+        <nav>
+            <div><img src="/assets/logo/logo bajada.png" alt=""></div>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/pages/page-1.html">La Bajada</a></li>
+                <li><a href="/pages/page-2.html">Albums</a>
+                    <ul>
+                        <li><a href="/pages/page-2-album/album-1.html">2016</a></li>
+                        <li><a href="/pages/page-2-album/album-2.html">2017</a></li>
+                        <li><a href="/pages/page-2-album/album-3.html">2021</a>
+                            <ul>
+                                <li><a href="/pages/page-2-album/album-3.html">Parte 1</a></li>
+                                <li><a href="/pages/page-2-album/album-4.html">Parte 2</a></li>
+                                <li><a href="/pages/page-2-album/album-5.html">Parte 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/pages/page-3.html">Acerca de Nosotros</a></li>
+                <li><a href="/pages/page-4.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="bg__img">
+        
+        <div class="container__albums">
+            <div class="titulo--album">
+                <p>Bajada 2021 - Parte 1</p>
+            </div>
+            <li><a href="#img1"><img src="/assets/images/bajada-3/parte-1/foto-1.jpg"></a></li>
+            <li><a href="#img2"><img src="/assets/images/bajada-3/parte-1/foto-2.jpg"></a></li>
+            <li><a href="#img3"><img src="/assets/images/bajada-3/parte-1/foto-3.jpg"></a></li>
+            <li><a href="#img4"><img src="/assets/images/bajada-3/parte-1/foto-4.jpg"></a></li>
+            <li><a href="#img5"><img src="/assets/images/bajada-3/parte-1/foto-5.jpg"></a></li>
+            <li><a href="#img6"><img src="/assets/images/bajada-3/parte-1/foto-6.jpg"></a></li>
+        </div>    
+        
+        <!-- VISUALIZACIÓN -->
+        <div class="modal" id="img1">
+            <div class="img__modal">
+                <a href="#img6">&#60</a>
+                <a href="#img2"><img src="/assets/images/bajada-3/parte-1/foto-1.jpg"></a>
+                <a href="#img2">></a>
+            </div>
+            <a class="cerrar" href="#">X</a>
+        </div>
+
+        <div class="modal" id="img2">
+            <div class="img__modal">
+                <a href="#img1">&#60</a>
+                <a href="#img3"><img src="/assets/images/bajada-3/parte-1/foto-2.jpg"></a>
+                <a href="#img3">></a>
+            </div>
+            <a class="cerrar" href="#">X</a>
+        </div>
+
+        <div class="modal" id="img3">
+            <div class="img__modal">
+                <a href="#img2">&#60</a>
+                <a href="#img4"><img src="/assets/images/bajada-3/parte-1/foto-3.jpg"></a>
+                <a href="#img4">></a>
+            </div>
+            <a class="cerrar" href="#">X</a>
+        </div>
+
+        <div class="modal" id="img4">
+            <div class="img__modal">
+                <a href="#img3">&#60</a>
+                <a href="#img5"><img src="/assets/images/bajada-3/parte-1/foto-4.jpg"></a>
+                <a href="#img5">></a>
+            </div>
+            <a class="cerrar" href="#">X</a>
+        </div>
+
+        <div class="modal" id="img5">
+            <div class="img__modal">
+                <a href="#img4">&#60</a>
+                <a href="#img6"><img src="/assets/images/bajada-3/parte-1/foto-5.jpg"></a>
+                <a href="#img6">></a>
+            </div>
+            <a class="cerrar" href="#">X</a>
+        </div>
+
+        <div class="modal" id="img6">
+            <div class="img__modal">
+                <a href="#img5">&#60</a>
+                <a href="#img1"><img src="/assets/images/bajada-3/parte-1/foto-6.jpg"></a>
+                <a href="#img1">></a>
+            </div>
+            <a class="cerrar" href="#">X</a>
+        </div>
+
+
+    </div>
+      
+
+    <footer class="footer-links">
+        <div class="footer-container">
+            <section class="social">
+                <div class="links">
+                    <a href="https://www.facebook.com/bajadamedicina2016/?ref=pages_you_manage" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                </div>
+            </section>
+            <p>@bajadademedicina2016</p>     
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/Js/main.js"></script>
+</body>
+</html>
